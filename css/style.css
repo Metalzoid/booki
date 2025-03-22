@@ -71,7 +71,6 @@ a {
 /****** Nav ***********/
 nav {
   width: 100%;
-  max-width: 1440px;
   height: 79px;
   position: fixed;
   top: 0;
