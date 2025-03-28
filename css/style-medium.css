@@ -1,5 +1,22 @@
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  /******** Nav ***********/
+  nav {
+    max-width: 1024px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  nav > #navbar {
+    max-width: 1024px;
+  }
+
+  .hero-content > .hero-filter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -11,6 +28,7 @@
   .populaires {
     width: 100%;
     margin-top: 50px;
+    gap: 0;
   }
 
   .populaires-cards {

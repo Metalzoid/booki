@@ -1,7 +1,6 @@
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   .main-container {
-    margin-top: 115px;
     padding: 0;
   }
 
@@ -9,6 +8,7 @@
   nav {
     height: 115px;
     top: -1px;
+    padding: 0;
   }
 
   nav > #navbar {
@@ -19,7 +19,7 @@
   }
 
   nav > #navbar > img {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   nav > #navbar > ul {
@@ -35,12 +35,12 @@
   }
 
   nav > #navbar > ul > li:has(a:hover) {
-    box-shadow: none;
+    border-top: none;
     border-bottom: 2px solid var(--main-color);
   }
 
   nav > #navbar > ul > li:not(:has(a:hover)) {
-    box-shadow: none;
+    border-top: none;
     border-bottom: 2px solid var(--main-bg-color);
   }
 
@@ -56,6 +56,12 @@
 
   .hero-content .hero-search {
     width: 100%;
+  }
+
+  .hero-content .hero-search button {
+    width: 47px;
+    height: 47px;
+    border-radius: 15px;
   }
 
   .hero-content .hero-search button span {
@@ -78,7 +84,7 @@
   .hero-content .hero-filter .hero-filter-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 15px;
     width: 100%;
   }
 
@@ -92,14 +98,23 @@
     flex-direction: column-reverse;
   }
 
+  .hebergements-and-populaires section {
+    gap: 0;
+    padding: 0 20px 30px 20px;
+  }
   /******** Hebergements ***********/
+
   .hebergements {
-    scroll-margin-top: 100px;
     background-color: white !important;
   }
 
   .hebergements .hebergements-cards {
     flex-direction: column;
+    gap: 0;
+  }
+
+  .hebergements .hebergements-cards .card {
+    margin-top: 15px;
   }
 
   .hebergements .hebergements-cards a {
@@ -115,10 +130,16 @@
     margin-top: 0;
     margin-bottom: 50px;
     border-radius: 0 !important;
+    gap: 0 !important;
+    padding: 15px 20px 30px 20px !important;
   }
 
   .populaires-cards {
     flex-direction: column;
+  }
+
+  .populaires-cards .card {
+    margin-top: 15px;
   }
 
   .populaires-cards a {
@@ -127,12 +148,18 @@
 
   /******** Activités ***********/
   .activities {
-    padding: 30px;
-    scroll-margin-top: 100px;
+    padding: 30px 20px;
   }
 
   .activities-cards {
     flex-direction: column;
+    gap: 15px;
+  }
+
+  .activities-cards .activity-card .card-title {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
   }
 
   .activities-cards a {
