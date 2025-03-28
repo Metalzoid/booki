@@ -138,6 +138,10 @@ nav > #navbar > ul > li:has(a:hover) {
   border-top: 2px solid var(--main-color);
 }
 
+nav > #navbar > ul > li:not(:has(a:hover)) {
+  border-top: 2px solid transparent;
+}
+
 /****** Hero ***********/
 .hero-container {
   width: 100%;
